@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Ravenous Codecademy Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Purpose
+
+This is an offline project assignment for the Codecademy Skill Path "Create a Front-End App with React". The goal is to create a restaurant recommendation website.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Yelp API 
+
+## Features
+
+- The website allows users to scroll up and down to navigate through its content.
+- Allows users to search for local businesses based on their location and keywords. 
+- Users can simulate a search by typing in the search bar
+- A list of mock restaurant data is presented to the user.
+
+## Future work
+
 
 ## Available Scripts
 
