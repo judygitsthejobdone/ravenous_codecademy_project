@@ -17,8 +17,6 @@ function Business(props) {
     props = hardcodedBusiness;
   return (
     <div className="App">
-      
-      <body>
         <img src={props.src} alt={props.alt} />
         <p className="business-name">{props.name}</p>
         <p className="business-address">
@@ -30,7 +28,6 @@ function Business(props) {
         <p className="business-category">{props.category}</p>
         <p className="business-rating">{props.rating}</p>
         <p className="business-review-count">{props.review_count}</p>
-      </body>
     </div>
   );
 }
