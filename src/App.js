@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import Business from './components/Business';
 import BusinessList from './components/BusinessList';
 
 function App() {
@@ -19,7 +17,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <body><BusinessList /></body>
+      <BusinessList />
     </div>
   );
 }
