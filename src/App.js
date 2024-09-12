@@ -1,5 +1,6 @@
 import './App.css';
 import BusinessList from './components/BusinessList';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <SearchBar />
       <BusinessList />
     </div>
   );
