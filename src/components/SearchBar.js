@@ -1,12 +1,12 @@
 function SearchBar() {
     const obj = {
         "Best Match": "best_match",
-        "Highest Rated": "highest_rated",
+        "Highest Rated": "rating",
         "Most Reviewed": "most_reviewed"
     }
     const sortOptions = [];
-    for (const property in obj) {
-        sortOptions.push(<li key={obj[property]}>{property}</li>);
+    for (const option in obj) {
+        sortOptions.push(<button key={obj[option]}>{option}</button>);
     };
   return (
     <form className="SearchBar" name="SearchBar" action="" method="GET">
