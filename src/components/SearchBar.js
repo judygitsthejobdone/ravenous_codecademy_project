@@ -1,3 +1,5 @@
+import './SearchBar.css';
+
 function SearchBar() {
     const obj = {
         "Best Match": "best_match",
@@ -10,11 +12,12 @@ function SearchBar() {
     };
   return (
     <form className="SearchBar" name="SearchBar" action="" method="GET">
-        <ul>{sortOptions}</ul>
+        {sortOptions}
+        <hr width="800vw"/><br /><br /><br />
         <input type="search" name="term" placeholder="Search Businesses" />
         <input type="search" name="location" placeholder="Where?" />
         <br />
-        <input type="submit" value="Let's Go" />
+        <input className="submit" type="submit" value="Let's Go" />
     </form>
   );
 };

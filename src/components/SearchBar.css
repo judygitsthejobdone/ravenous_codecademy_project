@@ -1,0 +1,43 @@
+form {
+    min-height: 15vh;
+    min-width: 100%;  
+    display: inline-block;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+.SearchBar {
+    background-color: brown;
+
+    button {
+        color: white;
+        font-family: inherit;
+        font-size: inherit;
+        text-wrap: pretty;
+        width: 8vw;
+        margin-top: 10vh;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        background: none;
+        border: none;
+    }
+    
+    input {
+        font-family: inherit;
+        font-size: inherit;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10vw;
+        width: 30vw;
+    }
+    .submit {
+        text-align: center;
+        width: 5vw;
+        padding-right: initial;
+        padding-left: initial;
+    }
+}
