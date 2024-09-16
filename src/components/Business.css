@@ -1,0 +1,66 @@
+.business {
+    text-align: center;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+    img {
+        min-width: 10px;
+        max-width: 30vw;
+        max-height: 40vh;
+    }
+    
+}
+.business-info {
+    /* note: at the moment everything is in one block but split into two columns
+    I think a more useful option would be to add two sub-blocks in order to fix 
+    the line spacing and belongness to columns*/
+    column-count: 2;
+    column-gap: 10px;
+    min-width: 10px;
+    max-width: 30vw;
+    text-wrap: nowrap;    
+    /*border-style: solid;*/
+    vertical-align: top;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.address {
+    text-align: left;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 18px;
+}
+.column2 {
+    text-align: right;
+    color: goldenrod;
+}
+.business-category {
+    font-weight: bolder;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.business-rating {
+    font-size: 10px;
+    font-weight: bolder;
+    line-height: 0px;
+}
+.business-review-count {
+    color: black;
+    font-size: 10px;
+    line-height: auto;
+}
+
+.business-name {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 20vw;
+    text-wrap: wrap;
+    margin-bottom: 6px;
+}
