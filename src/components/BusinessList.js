@@ -1,4 +1,5 @@
 import Business from "./Business";
+import './BusinessList.css'
 
 const hardcodedBusiness = {
     name: "Uncle Chip's",
@@ -26,7 +27,7 @@ function BusinessList() {
     const list = businessArray.map(business=><li>{business}</li>);
 
     return (
-    <div className="BusinessList">
+    <div className="Business-List">
       <ul>
         {list}
       </ul>
