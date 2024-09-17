@@ -1,6 +1,7 @@
 import './App.css';
 import BusinessList from './components/BusinessList';
 import SearchBar from './components/SearchBar';
+import data from './api/mock'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         </p>
       </header>
       <SearchBar />
-      <BusinessList />
+      <BusinessList businessArray={data}/>
     </div>
   );
 }
