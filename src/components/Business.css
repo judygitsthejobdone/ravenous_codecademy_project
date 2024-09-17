@@ -38,14 +38,15 @@
 }
 .column2 {
     text-align: right;
-    color: goldenrod;
 }
-.business-category {
+h3 {
+    color: goldenrod;
     font-weight: bolder;
     font-size: 14px;
     margin-bottom: 0px;
 }
-.business-rating {
+h4 {
+    color: goldenrod;
     font-size: 10px;
     font-weight: bolder;
     line-height: 0px;
@@ -56,7 +57,7 @@
     line-height: auto;
 }
 
-.business-name {
+h2 {
     text-align: left;
     font-size: 14px;
     font-weight: bold;
