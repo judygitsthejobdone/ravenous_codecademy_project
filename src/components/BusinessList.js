@@ -1,6 +1,6 @@
 import Business from "./Business";
 import './BusinessList.css';
-import { Box, Flex, Spacer } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 
 
 function BusinessList(props) {

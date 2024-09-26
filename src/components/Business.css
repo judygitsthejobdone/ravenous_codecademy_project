@@ -1,4 +1,4 @@
-.business {
+/*.business {
     text-align: center;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
@@ -14,7 +14,7 @@
         max-height: 40vh;
     }
     
-}
+}*/
 .business-info {
     /* note: at the moment everything is in one block but split into two columns
     I think a more useful option would be to add two sub-blocks in order to fix 
