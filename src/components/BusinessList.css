@@ -1,0 +1,20 @@
+.business {
+  width: 30%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .business {
+      width: 90%;
+      max-width: 500px;
+      h2 {
+        font-size: 5vw;
+      }
+      .business-info {
+        font-size: 3vw;
+        h3 {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
