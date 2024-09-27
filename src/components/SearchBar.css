@@ -1,6 +1,6 @@
 form {
     min-height: 15vh;
-    min-width: 100%;  
+    width: 100%;  
     display: inline-block;
     justify-items: center;
     justify-content: center;
@@ -10,18 +10,21 @@ form {
 }
 .SearchBar {
     background-color: brown;
-
-    button {
-        color: white;
-        font-family: inherit;
-        font-size: inherit;
-        text-wrap: pretty;
-        width: 8vw;
-        margin-top: 10vh;
-        margin-left: 4vw;
-        margin-right: 4vw;
-        background: none;
-        border: none;
+    width: "800vw";
+    div {
+        justify-content: space-between;
+        button {
+            color: white;
+            font-family: inherit;
+            font-size: inherit;
+            text-wrap: pretty;
+            width: 15vw;
+            margin-top: 10vh;
+            margin-left: 4vw;
+            margin-right: 4vw;
+            background: none;
+            border: none;
+        }
     }
     
     input {
@@ -31,7 +34,6 @@ form {
         margin-right: 5vw;
         margin-bottom: 10px;
         padding-left: 10px;
-        padding-right: 10vw;
         width: 30vw;
     }
     .submit {
@@ -39,5 +41,12 @@ form {
         width: 80px;
         padding-right: initial;
         padding-left: initial;
+        background-color: goldenrod;
+        border-radius: 5px;
     }
+}
+
+/* Responsive layout - when the screen is less than 800px wide */
+@media screen and (max-width: 800px) {
+
 }
