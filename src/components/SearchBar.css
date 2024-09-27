@@ -7,24 +7,19 @@ form {
     color: white;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
-}
-.SearchBar {
     background-color: brown;
-    width: "800vw";
-    div {
-        justify-content: space-between;
-        button {
-            color: white;
-            font-family: inherit;
-            font-size: inherit;
-            text-wrap: pretty;
-            width: 15vw;
-            margin-top: 10vh;
-            margin-left: 4vw;
-            margin-right: 4vw;
-            background: none;
-            border: none;
-        }
+    
+    button {
+        color: white;
+        font-family: inherit;
+        font-size: inherit;
+        text-wrap: pretty;
+        width: 15vw;
+        margin-top: 10vh;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        background: none;
+        border: none;
     }
     
     input {
@@ -44,9 +39,4 @@ form {
         background-color: goldenrod;
         border-radius: 5px;
     }
-}
-
-/* Responsive layout - when the screen is less than 800px wide */
-@media screen and (max-width: 800px) {
-
 }

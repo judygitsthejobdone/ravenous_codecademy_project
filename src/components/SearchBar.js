@@ -12,7 +12,7 @@ function SearchBar() {
     };
   return (
     <form className="SearchBar" name="SearchBar" action="" method="GET">
-        <div>{sortOptions}</div>
+        {sortOptions}
         <hr /><br />
         <input type="search" name="term" placeholder="Search Businesses" />
         <input type="search" name="location" placeholder="Where?" />
