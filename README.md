@@ -13,6 +13,7 @@ This is an offline project assignment for the Codecademy Skill Path "Create a Fr
 - JavaScript
 - React
 - Yelp API 
+- ChakraUI
 
 ## Features
 
