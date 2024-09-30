@@ -6,7 +6,7 @@ const url = new URL('https://api.yelp.com/v3/businesses/search');
 // See baweaver's response on github for solution to authentication issues
 // https://github.com/Yelp/yelp-fusion/issues/647
 
-const getData = async (search, location = 'Washington, DC', sortBy) => {
+const getData = async (search, location = 'Washington, DC', sortBy = 'best_match') => {
     const query = new URLSearchParams({
         'term': search,
         'location': location,
