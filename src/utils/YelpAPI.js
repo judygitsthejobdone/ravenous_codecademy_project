@@ -1,7 +1,5 @@
-const querystring = require('node:querystring'); 
-const ClientID = 'fkKEWOBAhThb7YBikSbwAg';
 const APIKey = 'dsAACaZfAgL0c6k-mm_eRxcR0N820U-Lbmmten64zWrFwzB2nqtop2thYKQ7YU-X1I9MfFlK39Hu9cfaruGsYNUXerUX252q7aCiH9F7vCdatoGEY1QNnMKQjTj3ZnYx';
-const baseURL = 'https://api.yelp.com/v3/businesses/search?';
+const url = new URL('https://api.yelp.com/v3/businesses/search');
 
 // Yelp API help page: 
 // https://docs.developer.yelp.com/reference/v3_business_search
@@ -9,12 +7,13 @@ const baseURL = 'https://api.yelp.com/v3/businesses/search?';
 // https://github.com/Yelp/yelp-fusion/issues/647
 
 const getData = async (search, location = 'Washington, DC', sortBy) => {
-    const query = querystring.encode({
+    const query = new URLSearchParams({
         'term': search,
         'location': location,
         'sort_by': sortBy,
         'limit': '6'
     });
+    url.search = query;
     const options = {method: 'GET', headers: {
         accept: 'application/json',
         Authorization: 'Bearer '+APIKey
@@ -25,7 +24,7 @@ const getData = async (search, location = 'Washington, DC', sortBy) => {
     //console.log(JSON.stringify(options));
 
     try {
-        const response = await fetch(baseURL+query, options);
+        const response = await fetch(url, options);
         if(!response.ok){
             console.log(JSON.stringify(response.statusText));
             throw new Error('Request Failed!');
@@ -54,4 +53,4 @@ const getData = async (search, location = 'Washington, DC', sortBy) => {
   }
   getData('Big Bear Cafe','20001','best_match')//.then(res => console.log(JSON.stringify(res)));
 
-//export default getData;
+export default getData;
