@@ -8,7 +8,7 @@ const baseURL = 'https://api.yelp.com/v3/businesses/search?';
 // See baweaver's response on github for solution to authentication issues
 // https://github.com/Yelp/yelp-fusion/issues/647
 
-const getData = async (search, location, sortBy) => {
+const getData = async (search, location = 'Washington, DC', sortBy) => {
     const query = querystring.encode({
         'term': search,
         'location': location,
@@ -45,7 +45,7 @@ const getData = async (search, location, sortBy) => {
                     rating: business.rating,
                     review_count: business.review_count,
                     src: business.image_url,
-                    alt: business.name + 'business photo'
+                    alt: business.name + ' business photo'
                 });
             })
             return businesses;
@@ -54,4 +54,4 @@ const getData = async (search, location, sortBy) => {
   }
   getData('Big Bear Cafe','20001','best_match')//.then(res => console.log(JSON.stringify(res)));
 
-export default getData;
+//export default getData;

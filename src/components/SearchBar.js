@@ -1,5 +1,5 @@
 import './SearchBar.css';
-import react, { useState } from 'react';
+import { useState } from 'react';
 
 function SearchBar() {
 
@@ -38,7 +38,7 @@ function SearchBar() {
   }
   const sortOptions = [];
   for (const option in obj) {
-      sortOptions.push(<button key={obj[option]} value={obj[option]} type='button' onClick={handleSortSelection} className={ sortBy == obj[option] ? 'activeSort': 'inactiveSort'}>{option}</button>);
+      sortOptions.push(<button key={obj[option]} value={obj[option]} type='button' onClick={handleSortSelection} className={ sortBy === obj[option] ? 'activeSort': 'inactiveSort'}>{option}</button>);
   };
   
   return (

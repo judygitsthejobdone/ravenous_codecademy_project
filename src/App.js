@@ -1,7 +1,7 @@
 import './App.css';
 import BusinessList from './components/BusinessList';
 import SearchBar from './components/SearchBar';
-import data from './api/mock';
+import data from './utils/mockAPI';
 import { ChakraProvider } from '@chakra-ui/react';
 
 function App() {
