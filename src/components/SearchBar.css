@@ -4,22 +4,20 @@ form {
     display: inline-block;
     justify-items: center;
     justify-content: center;
-    color: white;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
     background-color: brown;
     
     button {
-        color: white;
         font-family: inherit;
         font-size: inherit;
         text-wrap: pretty;
         width: 15vw;
         margin-top: 10vh;
-        margin-left: 4vw;
-        margin-right: 4vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
         background: none;
-        border: none;
+        border-bottom-width: 1px;
     }
     
     input {
@@ -32,6 +30,7 @@ form {
         width: 30vw;
     }
     .submit {
+        color: white;
         text-align: center;
         width: 80px;
         padding-right: initial;
@@ -39,4 +38,14 @@ form {
         background-color: goldenrod;
         border-radius: 5px;
     }
+}
+
+.activeSort {
+    color:burlywood;
+    border-bottom-color: burlywood;
+}
+
+.inactiveSort {
+    color:white;
+    border-bottom-color: white;
 }
