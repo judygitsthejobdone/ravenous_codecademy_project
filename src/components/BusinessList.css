@@ -7,6 +7,9 @@
     .business {
       width: 90%;
       max-width: 500px;
+      .image {
+        max-width: 100%;
+      }
       h2 {
         font-size: 5vw;
       }

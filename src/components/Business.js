@@ -3,15 +3,22 @@ import { Flex, Spacer, Box, Card, Heading, Image, CardBody, Text, Stack } from '
 
 function Business(props) {
   return (
-    <Card /*className='business'*/ >
+    <Card /*className='business'*/ height='100%'>
+      
       <CardBody>
+      <Flex direction={'column'} height='100%'>
         <Image 
           src={props.business.src} 
           alt={props.business.alt} 
           borderRadius="lg"
+          maxHeight='60vh'
+          alignSelf='center'
+          className='image'
         />
-        <Stack>
-          <Heading as='h2' textAlign={'left'} size={'md'} noOfLines={1} >{props.business.name}</Heading>
+        <Spacer/>
+        <Flex direction={'column'} >
+          
+          <Heading as='h2' textAlign={'left'}  size={'md'} noOfLines={1} >{props.business.name} </Heading>
           
           <Flex className="business-info" >
               <Text textAlign={'left'} noOfLines={3} size={'xs'}>
@@ -27,7 +34,8 @@ function Business(props) {
               </Box>
           
           </Flex>
-        </Stack>
+        </Flex>
+      </Flex>
       </CardBody>
     </Card>
   );
