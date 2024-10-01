@@ -23,6 +23,12 @@ function App() {
         </header>
         <SearchBar searchYelp={searchYelp} />
         <BusinessList businessArray={data}/>
+        <footer>
+          <p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app" target='_blank' >Create React App</a> and 
+          is powered by <a href="https://docs.developer.yelp.com/reference/v3_business_search" target='_blank' >Yelp Fusion API</a>
+          . Styles are powered by <a target='blank' href='https://v2.chakra-ui.com/'>ChakraUI</a>.</p>
+          <address><a href="https://github.com/judygitsthejobdone" target='_blank' >Developed by Judah Mendez</a></address>
+          </footer>
       </div>
     </ChakraProvider>
   );

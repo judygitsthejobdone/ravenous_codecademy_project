@@ -4,6 +4,9 @@
 
 .App-header {
   background-color: goldenrod;
+  position: sticky;
+  top: 0;
+  z-index: +1;
   min-height: 2vh;
   max-height: 8vh;
   display: flex;
@@ -13,4 +16,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;}
+  font-weight: bold;
+}
+
+footer {
+  text-align: left;
+  text-wrap: wrap;
+  position: sticky;
+  bottom: 0;
+  padding: 5px;
+  background-color: lightgray;
+  color: black;
+  font-size: calc(5px + 1vmin);
+  a {
+    text-decoration: underline;
+  }
+}
