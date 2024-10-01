@@ -41,7 +41,7 @@ function SearchBar({searchYelp}) {
         {sortOptions}
         <br /> <br />
         <input type="search" name="term" placeholder="Search Businesses" value={search} onChange={handleSearch}/>
-        <input type="search" name="location" placeholder="Where?" value={location} onChange={handleLocation}/>
+        <input type="search" name="location" placeholder="Where?" value={location} onChange={handleLocation} required={true} />
         <br />
         <input className="submit" type="submit" value="Let's Go" />
     </form>
