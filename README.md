@@ -21,8 +21,19 @@ This is an offline project assignment for the Codecademy Skill Path "Create a Fr
 - Allows users to search for local businesses based on their location and keywords. 
 - Users can simulate a search by typing in the search bar
 - A list of mock restaurant data is presented to the user.
+- Allows user to search by pressing “Enter” (or “Return”) on your keyboard, as opposed to manually clicking.
+- Responds dynamically to different screen sizes
 
 ## Future work
+- Add background image to searchBar for desktop and for mobile screens
+- Clicking on a different sorting option automatically re-queries the Yelp API, rather than having to manually click “Let’s Go” again.
+- Implement my own type of sort (for example, by entering a distance or radius from a central location).
+- Add autocompletion of addresses to the “Location” input.
+- Make a "use current location" option for Location input
+- Add checkbox to limit by "Open Now" and add to YelpAPI functionality and to the Business elements
+- Make addresses clickable and have them open the address in Google Maps in a new tab.
+- Make images and Business Name clickable and have them open the business’ website in a new tab.
+- Implement google APIs https://developers.google.com/maps and add ability to select between Google data and Yelp data
 
 
 ## Available Scripts
