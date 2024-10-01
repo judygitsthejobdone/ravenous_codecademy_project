@@ -26,8 +26,7 @@ const getData = async (search, location = 'Washington, DC', sortBy = 'best_match
     try {
         const response = await fetch(url, options);
         if(!response.ok){
-            console.log(JSON.stringify(response.statusText));
-            throw new Error('Request Failed!');
+            throw new Error('Request Failed! Code '+response.status+": "+response.statusText);
         }    
             const jsonResponse = await response.json();
             //code to execute with jsonResponse
@@ -49,7 +48,9 @@ const getData = async (search, location = 'Washington, DC', sortBy = 'best_match
             })
             return businesses;
     } catch(error){
-        console.log(error)}
+        console.log(error)
+        return []
+    }
   }
   getData('Big Bear Cafe','20001','best_match')//.then(res => console.log(JSON.stringify(res)));
 

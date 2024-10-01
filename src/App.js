@@ -7,7 +7,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { useState } from 'react';
 
 function App() {
-  const [data,setData] = useState([]);
+  const [data,setData] = useState();
   const searchYelp = (search,location,sortBy) => {
     getData(search, location, sortBy ? sortBy : 'best_match')
       .then((res)=>setData(res));

@@ -4,6 +4,11 @@ import { Box, Flex } from '@chakra-ui/react';
 
 
 function BusinessList(props) {
+    if (!props.businessArray) {
+      return <Box>What would you like to eat?</Box>;
+    } else if (!props.businessArray.length) {
+      return <Box>Hmmm we didn't find anything...try again!</Box>
+    }
     return (
     <div>
       <Flex className="Business-List" justifyContent='space-between' flexFlow='wrap' maxWidth="100%">
